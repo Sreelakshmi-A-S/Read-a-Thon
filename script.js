@@ -81,7 +81,7 @@ function displayMessage(message, sender) {
 // Function to generate a bot greeting
 function generateBotGreeting() {
   // Display a greeting in the chat log
-  displayMessage('Hello! Welcome to The Digital Bookshelf. Happy reading!', 'bot');
+  displayMessage('Hello! Welcome to The Digital Bookshelf. Have a nice day!', 'bot');
 }
 
 // Generate the bot greeting when the page loads
