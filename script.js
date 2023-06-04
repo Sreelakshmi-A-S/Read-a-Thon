@@ -63,4 +63,26 @@ let books = [
   
   // Initial display of books
   displayBooks();
-  
+
+// Function to display a message in the chat log
+function displayMessage(message, sender) {
+  var chatLog = document.getElementById('chat-log');
+  var messageElement = document.createElement('div');
+
+  messageElement.textContent = message;
+  messageElement.className = sender + '-message';
+
+  chatLog.appendChild(messageElement);
+
+  // Scroll to the bottom of the chat log
+  chatLog.scrollTop = chatLog.scrollHeight;
+}
+
+// Function to generate a bot greeting
+function generateBotGreeting() {
+  // Display a greeting in the chat log
+  displayMessage('Hello! Welcome to The Digital Bookshelf. Happy reading!', 'bot');
+}
+
+// Generate the bot greeting when the page loads
+generateBotGreeting();
